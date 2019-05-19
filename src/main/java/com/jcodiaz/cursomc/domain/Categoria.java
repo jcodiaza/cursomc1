@@ -10,15 +10,14 @@ import javax.persistence.Id;
 @Entity
 public class Categoria implements Serializable {
 
-	/**
-	 * 
-	 */
+	
 	private static final long serialVersionUID = 1L;
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY )
 	private Integer id;
 	private String nome;
-	
+	//create the atributes
+	//create the constructor
 	public Categoria() {
 		
 	}
@@ -44,7 +43,7 @@ public class Categoria implements Serializable {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-
+//create hashcode and equals
 	@Override
 	public int hashCode() {
 		final int prime = 31;
